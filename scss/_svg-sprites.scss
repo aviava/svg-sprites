@@ -1,0 +1,39 @@
+.svgbox {
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(0, 204, 255);
+
+	&__item {
+		width: 50px;
+		height: 50px;
+		margin-right: 10px;
+		border: 2px solid #bcbcbd;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		background-color: rgb(255, 0, 0);
+		transition: background-color 0.2s linear;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			background-color: #0000ff;
+		}
+
+		&:hover .svgbox__icon {
+			fill: rgb(255, 251, 0);
+		}
+	}
+
+	&__icon {
+		display: block;
+		height: 20px;
+		fill: #000;
+		transition: fill 0.2s linear;
+	}
+}
